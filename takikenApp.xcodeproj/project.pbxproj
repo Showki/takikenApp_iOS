@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09CE67D71CBD08DB00755544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67D61CBD08DB00755544 /* AppDelegate.swift */; };
+		09CE67D91CBD08DB00755544 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67D81CBD08DB00755544 /* ViewController.swift */; };
+		09CE67DC1CBD08DB00755544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CE67DA1CBD08DB00755544 /* Main.storyboard */; };
+		09CE67DE1CBD08DB00755544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CE67DD1CBD08DB00755544 /* Assets.xcassets */; };
+		09CE67E11CBD08DB00755544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CE67DF1CBD08DB00755544 /* LaunchScreen.storyboard */; };
+		09CE67EC1CBD08DB00755544 /* takikenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67EB1CBD08DB00755544 /* takikenAppTests.swift */; };
+		09CE67F71CBD08DB00755544 /* takikenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67F61CBD08DB00755544 /* takikenAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09CE67E81CBD08DB00755544 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09CE67CB1CBD08DB00755544 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CE67D21CBD08DB00755544;
+			remoteInfo = takikenApp;
+		};
+		09CE67F31CBD08DB00755544 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09CE67CB1CBD08DB00755544 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CE67D21CBD08DB00755544;
+			remoteInfo = takikenApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09CE67D31CBD08DB00755544 /* takikenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takikenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CE67D61CBD08DB00755544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09CE67D81CBD08DB00755544 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09CE67DB1CBD08DB00755544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09CE67DD1CBD08DB00755544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09CE67E01CBD08DB00755544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09CE67E21CBD08DB00755544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09CE67E71CBD08DB00755544 /* takikenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = takikenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CE67EB1CBD08DB00755544 /* takikenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takikenAppTests.swift; sourceTree = "<group>"; };
+		09CE67ED1CBD08DB00755544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09CE67F21CBD08DB00755544 /* takikenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = takikenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CE67F61CBD08DB00755544 /* takikenAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takikenAppUITests.swift; sourceTree = "<group>"; };
+		09CE67F81CBD08DB00755544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09CE67D01CBD08DB00755544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE67E41CBD08DB00755544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE67EF1CBD08DB00755544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09CE67CA1CBD08DB00755544 = {
+			isa = PBXGroup;
+			children = (
+				09CE67D51CBD08DB00755544 /* takikenApp */,
+				09CE67EA1CBD08DB00755544 /* takikenAppTests */,
+				09CE67F51CBD08DB00755544 /* takikenAppUITests */,
+				09CE67D41CBD08DB00755544 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09CE67D41CBD08DB00755544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09CE67D31CBD08DB00755544 /* takikenApp.app */,
+				09CE67E71CBD08DB00755544 /* takikenAppTests.xctest */,
+				09CE67F21CBD08DB00755544 /* takikenAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09CE67D51CBD08DB00755544 /* takikenApp */ = {
+			isa = PBXGroup;
+			children = (
+				09CE67D61CBD08DB00755544 /* AppDelegate.swift */,
+				09CE67D81CBD08DB00755544 /* ViewController.swift */,
+				09CE67DA1CBD08DB00755544 /* Main.storyboard */,
+				09CE67DD1CBD08DB00755544 /* Assets.xcassets */,
+				09CE67DF1CBD08DB00755544 /* LaunchScreen.storyboard */,
+				09CE67E21CBD08DB00755544 /* Info.plist */,
+			);
+			path = takikenApp;
+			sourceTree = "<group>";
+		};
+		09CE67EA1CBD08DB00755544 /* takikenAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				09CE67EB1CBD08DB00755544 /* takikenAppTests.swift */,
+				09CE67ED1CBD08DB00755544 /* Info.plist */,
+			);
+			path = takikenAppTests;
+			sourceTree = "<group>";
+		};
+		09CE67F51CBD08DB00755544 /* takikenAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09CE67F61CBD08DB00755544 /* takikenAppUITests.swift */,
+				09CE67F81CBD08DB00755544 /* Info.plist */,
+			);
+			path = takikenAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09CE67D21CBD08DB00755544 /* takikenApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CE67FB1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenApp" */;
+			buildPhases = (
+				09CE67CF1CBD08DB00755544 /* Sources */,
+				09CE67D01CBD08DB00755544 /* Frameworks */,
+				09CE67D11CBD08DB00755544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = takikenApp;
+			productName = takikenApp;
+			productReference = 09CE67D31CBD08DB00755544 /* takikenApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09CE67E61CBD08DB00755544 /* takikenAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CE67FE1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppTests" */;
+			buildPhases = (
+				09CE67E31CBD08DB00755544 /* Sources */,
+				09CE67E41CBD08DB00755544 /* Frameworks */,
+				09CE67E51CBD08DB00755544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09CE67E91CBD08DB00755544 /* PBXTargetDependency */,
+			);
+			name = takikenAppTests;
+			productName = takikenAppTests;
+			productReference = 09CE67E71CBD08DB00755544 /* takikenAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09CE67F11CBD08DB00755544 /* takikenAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CE68011CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppUITests" */;
+			buildPhases = (
+				09CE67EE1CBD08DB00755544 /* Sources */,
+				09CE67EF1CBD08DB00755544 /* Frameworks */,
+				09CE67F01CBD08DB00755544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09CE67F41CBD08DB00755544 /* PBXTargetDependency */,
+			);
+			name = takikenAppUITests;
+			productName = takikenAppUITests;
+			productReference = 09CE67F21CBD08DB00755544 /* takikenAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09CE67CB1CBD08DB00755544 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = fksk;
+				TargetAttributes = {
+					09CE67D21CBD08DB00755544 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 594MBBD4GC;
+					};
+					09CE67E61CBD08DB00755544 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 594MBBD4GC;
+						TestTargetID = 09CE67D21CBD08DB00755544;
+					};
+					09CE67F11CBD08DB00755544 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 594MBBD4GC;
+						TestTargetID = 09CE67D21CBD08DB00755544;
+					};
+				};
+			};
+			buildConfigurationList = 09CE67CE1CBD08DB00755544 /* Build configuration list for PBXProject "takikenApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09CE67CA1CBD08DB00755544;
+			productRefGroup = 09CE67D41CBD08DB00755544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09CE67D21CBD08DB00755544 /* takikenApp */,
+				09CE67E61CBD08DB00755544 /* takikenAppTests */,
+				09CE67F11CBD08DB00755544 /* takikenAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09CE67D11CBD08DB00755544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CE67E11CBD08DB00755544 /* LaunchScreen.storyboard in Resources */,
+				09CE67DE1CBD08DB00755544 /* Assets.xcassets in Resources */,
+				09CE67DC1CBD08DB00755544 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE67E51CBD08DB00755544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE67F01CBD08DB00755544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09CE67CF1CBD08DB00755544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CE67D91CBD08DB00755544 /* ViewController.swift in Sources */,
+				09CE67D71CBD08DB00755544 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE67E31CBD08DB00755544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CE67EC1CBD08DB00755544 /* takikenAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE67EE1CBD08DB00755544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CE67F71CBD08DB00755544 /* takikenAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09CE67E91CBD08DB00755544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09CE67D21CBD08DB00755544 /* takikenApp */;
+			targetProxy = 09CE67E81CBD08DB00755544 /* PBXContainerItemProxy */;
+		};
+		09CE67F41CBD08DB00755544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09CE67D21CBD08DB00755544 /* takikenApp */;
+			targetProxy = 09CE67F31CBD08DB00755544 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09CE67DA1CBD08DB00755544 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CE67DB1CBD08DB00755544 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09CE67DF1CBD08DB00755544 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CE67E01CBD08DB00755544 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09CE67F91CBD08DB00755544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09CE67FA1CBD08DB00755544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09CE67FC1CBD08DB00755544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = takikenApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09CE67FD1CBD08DB00755544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = takikenApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09CE67FF1CBD08DB00755544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = takikenAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/takikenApp.app/takikenApp";
+			};
+			name = Debug;
+		};
+		09CE68001CBD08DB00755544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = takikenAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/takikenApp.app/takikenApp";
+			};
+			name = Release;
+		};
+		09CE68021CBD08DB00755544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = takikenAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = takikenApp;
+			};
+			name = Debug;
+		};
+		09CE68031CBD08DB00755544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = takikenAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = takikenApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09CE67CE1CBD08DB00755544 /* Build configuration list for PBXProject "takikenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CE67F91CBD08DB00755544 /* Debug */,
+				09CE67FA1CBD08DB00755544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09CE67FB1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CE67FC1CBD08DB00755544 /* Debug */,
+				09CE67FD1CBD08DB00755544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09CE67FE1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CE67FF1CBD08DB00755544 /* Debug */,
+				09CE68001CBD08DB00755544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09CE68011CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CE68021CBD08DB00755544 /* Debug */,
+				09CE68031CBD08DB00755544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09CE67CB1CBD08DB00755544 /* Project object */;
+}
