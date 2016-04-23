@@ -1,0 +1,6 @@
+framework module Pods_takikenApp {
+  umbrella header "Pods-takikenApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

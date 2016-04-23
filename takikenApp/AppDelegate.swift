@@ -9,15 +9,31 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate{
+    
     var window: UIWindow?
-
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+//    var slidingViewController: ECSlidingViewController?
+    //デフォルトは盛岡駅
+    var gpsLat: Double = 39.702004
+    var gpsLon: Double = 141.136098
+    // *** 問題情報を保存する ***
+    var problems:NSMutableArray = NSMutableArray()
+    var answer:String?
+    var rightAnswer:String?
+    var rightDescription:String?
+    var answerProblemNumber:Int?
+    var correctCount:Int?
+    var answerProblemType:String?
+    var categories:String?
+    
+//    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//        GMSServices.provideAPIKey("AIzaSyBMtO1fNcnpd8HBam8mpg2wEDAQ_dYinC8")
+//        slidingViewController = self.window!.rootViewController as? ECSlidingViewController
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        slidingViewController?.topViewController = storyBoard.instantiateViewControllerWithIdentifier("Top")
+//        // Override point for customization after application launch.
+//        return true
+//    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

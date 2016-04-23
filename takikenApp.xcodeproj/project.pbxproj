@@ -1,510 +1,1335 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		09CE67D71CBD08DB00755544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67D61CBD08DB00755544 /* AppDelegate.swift */; };
-		09CE67D91CBD08DB00755544 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67D81CBD08DB00755544 /* ViewController.swift */; };
-		09CE67DC1CBD08DB00755544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CE67DA1CBD08DB00755544 /* Main.storyboard */; };
-		09CE67DE1CBD08DB00755544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CE67DD1CBD08DB00755544 /* Assets.xcassets */; };
-		09CE67E11CBD08DB00755544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CE67DF1CBD08DB00755544 /* LaunchScreen.storyboard */; };
-		09CE67EC1CBD08DB00755544 /* takikenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67EB1CBD08DB00755544 /* takikenAppTests.swift */; };
-		09CE67F71CBD08DB00755544 /* takikenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE67F61CBD08DB00755544 /* takikenAppUITests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		09CE67E81CBD08DB00755544 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09CE67CB1CBD08DB00755544 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09CE67D21CBD08DB00755544;
-			remoteInfo = takikenApp;
-		};
-		09CE67F31CBD08DB00755544 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09CE67CB1CBD08DB00755544 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09CE67D21CBD08DB00755544;
-			remoteInfo = takikenApp;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		09CE67D31CBD08DB00755544 /* takikenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takikenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		09CE67D61CBD08DB00755544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09CE67D81CBD08DB00755544 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09CE67DB1CBD08DB00755544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09CE67DD1CBD08DB00755544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		09CE67E01CBD08DB00755544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		09CE67E21CBD08DB00755544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09CE67E71CBD08DB00755544 /* takikenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = takikenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09CE67EB1CBD08DB00755544 /* takikenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takikenAppTests.swift; sourceTree = "<group>"; };
-		09CE67ED1CBD08DB00755544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09CE67F21CBD08DB00755544 /* takikenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = takikenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09CE67F61CBD08DB00755544 /* takikenAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takikenAppUITests.swift; sourceTree = "<group>"; };
-		09CE67F81CBD08DB00755544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		09CE67D01CBD08DB00755544 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09CE67E41CBD08DB00755544 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09CE67EF1CBD08DB00755544 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		09CE67CA1CBD08DB00755544 = {
-			isa = PBXGroup;
-			children = (
-				09CE67D51CBD08DB00755544 /* takikenApp */,
-				09CE67EA1CBD08DB00755544 /* takikenAppTests */,
-				09CE67F51CBD08DB00755544 /* takikenAppUITests */,
-				09CE67D41CBD08DB00755544 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		09CE67D41CBD08DB00755544 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				09CE67D31CBD08DB00755544 /* takikenApp.app */,
-				09CE67E71CBD08DB00755544 /* takikenAppTests.xctest */,
-				09CE67F21CBD08DB00755544 /* takikenAppUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		09CE67D51CBD08DB00755544 /* takikenApp */ = {
-			isa = PBXGroup;
-			children = (
-				09CE67D61CBD08DB00755544 /* AppDelegate.swift */,
-				09CE67D81CBD08DB00755544 /* ViewController.swift */,
-				09CE67DA1CBD08DB00755544 /* Main.storyboard */,
-				09CE67DD1CBD08DB00755544 /* Assets.xcassets */,
-				09CE67DF1CBD08DB00755544 /* LaunchScreen.storyboard */,
-				09CE67E21CBD08DB00755544 /* Info.plist */,
-			);
-			path = takikenApp;
-			sourceTree = "<group>";
-		};
-		09CE67EA1CBD08DB00755544 /* takikenAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				09CE67EB1CBD08DB00755544 /* takikenAppTests.swift */,
-				09CE67ED1CBD08DB00755544 /* Info.plist */,
-			);
-			path = takikenAppTests;
-			sourceTree = "<group>";
-		};
-		09CE67F51CBD08DB00755544 /* takikenAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				09CE67F61CBD08DB00755544 /* takikenAppUITests.swift */,
-				09CE67F81CBD08DB00755544 /* Info.plist */,
-			);
-			path = takikenAppUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		09CE67D21CBD08DB00755544 /* takikenApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09CE67FB1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenApp" */;
-			buildPhases = (
-				09CE67CF1CBD08DB00755544 /* Sources */,
-				09CE67D01CBD08DB00755544 /* Frameworks */,
-				09CE67D11CBD08DB00755544 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = takikenApp;
-			productName = takikenApp;
-			productReference = 09CE67D31CBD08DB00755544 /* takikenApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-		09CE67E61CBD08DB00755544 /* takikenAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09CE67FE1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppTests" */;
-			buildPhases = (
-				09CE67E31CBD08DB00755544 /* Sources */,
-				09CE67E41CBD08DB00755544 /* Frameworks */,
-				09CE67E51CBD08DB00755544 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09CE67E91CBD08DB00755544 /* PBXTargetDependency */,
-			);
-			name = takikenAppTests;
-			productName = takikenAppTests;
-			productReference = 09CE67E71CBD08DB00755544 /* takikenAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		09CE67F11CBD08DB00755544 /* takikenAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09CE68011CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppUITests" */;
-			buildPhases = (
-				09CE67EE1CBD08DB00755544 /* Sources */,
-				09CE67EF1CBD08DB00755544 /* Frameworks */,
-				09CE67F01CBD08DB00755544 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09CE67F41CBD08DB00755544 /* PBXTargetDependency */,
-			);
-			name = takikenAppUITests;
-			productName = takikenAppUITests;
-			productReference = 09CE67F21CBD08DB00755544 /* takikenAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		09CE67CB1CBD08DB00755544 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = fksk;
-				TargetAttributes = {
-					09CE67D21CBD08DB00755544 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 594MBBD4GC;
-					};
-					09CE67E61CBD08DB00755544 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 594MBBD4GC;
-						TestTargetID = 09CE67D21CBD08DB00755544;
-					};
-					09CE67F11CBD08DB00755544 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 594MBBD4GC;
-						TestTargetID = 09CE67D21CBD08DB00755544;
-					};
-				};
-			};
-			buildConfigurationList = 09CE67CE1CBD08DB00755544 /* Build configuration list for PBXProject "takikenApp" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 09CE67CA1CBD08DB00755544;
-			productRefGroup = 09CE67D41CBD08DB00755544 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				09CE67D21CBD08DB00755544 /* takikenApp */,
-				09CE67E61CBD08DB00755544 /* takikenAppTests */,
-				09CE67F11CBD08DB00755544 /* takikenAppUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		09CE67D11CBD08DB00755544 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09CE67E11CBD08DB00755544 /* LaunchScreen.storyboard in Resources */,
-				09CE67DE1CBD08DB00755544 /* Assets.xcassets in Resources */,
-				09CE67DC1CBD08DB00755544 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09CE67E51CBD08DB00755544 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09CE67F01CBD08DB00755544 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		09CE67CF1CBD08DB00755544 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09CE67D91CBD08DB00755544 /* ViewController.swift in Sources */,
-				09CE67D71CBD08DB00755544 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09CE67E31CBD08DB00755544 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09CE67EC1CBD08DB00755544 /* takikenAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09CE67EE1CBD08DB00755544 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09CE67F71CBD08DB00755544 /* takikenAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		09CE67E91CBD08DB00755544 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09CE67D21CBD08DB00755544 /* takikenApp */;
-			targetProxy = 09CE67E81CBD08DB00755544 /* PBXContainerItemProxy */;
-		};
-		09CE67F41CBD08DB00755544 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09CE67D21CBD08DB00755544 /* takikenApp */;
-			targetProxy = 09CE67F31CBD08DB00755544 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		09CE67DA1CBD08DB00755544 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09CE67DB1CBD08DB00755544 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		09CE67DF1CBD08DB00755544 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09CE67E01CBD08DB00755544 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		09CE67F91CBD08DB00755544 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		09CE67FA1CBD08DB00755544 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		09CE67FC1CBD08DB00755544 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = takikenApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		09CE67FD1CBD08DB00755544 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = takikenApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		09CE67FF1CBD08DB00755544 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = takikenAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/takikenApp.app/takikenApp";
-			};
-			name = Debug;
-		};
-		09CE68001CBD08DB00755544 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = takikenAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/takikenApp.app/takikenApp";
-			};
-			name = Release;
-		};
-		09CE68021CBD08DB00755544 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = takikenAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = takikenApp;
-			};
-			name = Debug;
-		};
-		09CE68031CBD08DB00755544 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = takikenAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fksk.takikenAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = takikenApp;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		09CE67CE1CBD08DB00755544 /* Build configuration list for PBXProject "takikenApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09CE67F91CBD08DB00755544 /* Debug */,
-				09CE67FA1CBD08DB00755544 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09CE67FB1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09CE67FC1CBD08DB00755544 /* Debug */,
-				09CE67FD1CBD08DB00755544 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		09CE67FE1CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09CE67FF1CBD08DB00755544 /* Debug */,
-				09CE68001CBD08DB00755544 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		09CE68011CBD08DB00755544 /* Build configuration list for PBXNativeTarget "takikenAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09CE68021CBD08DB00755544 /* Debug */,
-				09CE68031CBD08DB00755544 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 09CE67CB1CBD08DB00755544 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>06554D3B36D6CC83FD451374</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-takikenApp.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-takikenApp/Pods-takikenApp.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0977A7561CC9C7AB0011C6D6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>answerRandomViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0977A7571CC9C7AB0011C6D6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0977A7561CC9C7AB0011C6D6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0977A7581CCA1C960011C6D6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>categoryModel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0977A7591CCA1C960011C6D6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0977A7581CCA1C960011C6D6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67CA1CBD08DB00755544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09CE67D51CBD08DB00755544</string>
+				<string>09CE67EA1CBD08DB00755544</string>
+				<string>09CE67F51CBD08DB00755544</string>
+				<string>09CE67D41CBD08DB00755544</string>
+				<string>B26726C70F2A51BECD5707C5</string>
+				<string>367D0BDEA18519D183C832DB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67CB1CBD08DB00755544</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>fksk</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>09CE67D21CBD08DB00755544</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>DevelopmentTeam</key>
+						<string>594MBBD4GC</string>
+					</dict>
+					<key>09CE67E61CBD08DB00755544</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>DevelopmentTeam</key>
+						<string>594MBBD4GC</string>
+						<key>TestTargetID</key>
+						<string>09CE67D21CBD08DB00755544</string>
+					</dict>
+					<key>09CE67F11CBD08DB00755544</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>DevelopmentTeam</key>
+						<string>594MBBD4GC</string>
+						<key>TestTargetID</key>
+						<string>09CE67D21CBD08DB00755544</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>09CE67CE1CBD08DB00755544</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>09CE67CA1CBD08DB00755544</string>
+			<key>productRefGroup</key>
+			<string>09CE67D41CBD08DB00755544</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>09CE67D21CBD08DB00755544</string>
+				<string>09CE67E61CBD08DB00755544</string>
+				<string>09CE67F11CBD08DB00755544</string>
+			</array>
+		</dict>
+		<key>09CE67CE1CBD08DB00755544</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>09CE67F91CBD08DB00755544</string>
+				<string>09CE67FA1CBD08DB00755544</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>09CE67CF1CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>09CE67D91CBD08DB00755544</string>
+				<string>09CE68151CBE4CAB00755544</string>
+				<string>09CE681B1CC09BDF00755544</string>
+				<string>09CE67D71CBD08DB00755544</string>
+				<string>09CE681D1CC0FD1900755544</string>
+				<string>09CE68171CBE6C1300755544</string>
+				<string>0977A7571CC9C7AB0011C6D6</string>
+				<string>09CE68191CC07BB600755544</string>
+				<string>0977A7591CCA1C960011C6D6</string>
+				<string>09CE68051CBDD07900755544</string>
+				<string>09CE68131CBE496300755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67D01CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8FD0F6871166B1EBC5F4E736</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67D11CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>09CE67E11CBD08DB00755544</string>
+				<string>09CE67DE1CBD08DB00755544</string>
+				<string>09CE67DC1CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67D21CBD08DB00755544</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>09CE67FB1CBD08DB00755544</string>
+			<key>buildPhases</key>
+			<array>
+				<string>87E77F1048DAB08F18CF8D6B</string>
+				<string>09CE67CF1CBD08DB00755544</string>
+				<string>09CE67D01CBD08DB00755544</string>
+				<string>09CE67D11CBD08DB00755544</string>
+				<string>9F3E957956555B8997E77186</string>
+				<string>AC71E013EA5D4A665147F774</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>takikenApp</string>
+			<key>productName</key>
+			<string>takikenApp</string>
+			<key>productReference</key>
+			<string>09CE67D31CBD08DB00755544</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>09CE67D31CBD08DB00755544</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>takikenApp.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>09CE67D41CBD08DB00755544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09CE67D31CBD08DB00755544</string>
+				<string>09CE67E71CBD08DB00755544</string>
+				<string>09CE67F21CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67D51CBD08DB00755544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09CE67DA1CBD08DB00755544</string>
+				<string>09CE68141CBE4CAB00755544</string>
+				<string>09CE67D61CBD08DB00755544</string>
+				<string>09CE68121CBE496300755544</string>
+				<string>09CE68181CC07BB600755544</string>
+				<string>09CE681A1CC09BDF00755544</string>
+				<string>09CE681C1CC0FD1900755544</string>
+				<string>0977A7561CC9C7AB0011C6D6</string>
+				<string>09CE67D81CBD08DB00755544</string>
+				<string>09CE68041CBDD07900755544</string>
+				<string>09CE68161CBE6C1300755544</string>
+				<string>0977A7581CCA1C960011C6D6</string>
+				<string>09CE67DD1CBD08DB00755544</string>
+				<string>09CE67DF1CBD08DB00755544</string>
+				<string>09CE67E21CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>takikenApp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67D61CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67D71CBD08DB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE67D61CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67D81CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67D91CBD08DB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE67D81CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67DA1CBD08DB00755544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09CE67DB1CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67DB1CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67DC1CBD08DB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE67DA1CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67DD1CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67DE1CBD08DB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE67DD1CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67DF1CBD08DB00755544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09CE67E01CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67E01CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67E11CBD08DB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE67DF1CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67E21CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67E31CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>09CE67EC1CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67E41CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67E51CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67E61CBD08DB00755544</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>09CE67FE1CBD08DB00755544</string>
+			<key>buildPhases</key>
+			<array>
+				<string>09CE67E31CBD08DB00755544</string>
+				<string>09CE67E41CBD08DB00755544</string>
+				<string>09CE67E51CBD08DB00755544</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>09CE67E91CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>takikenAppTests</string>
+			<key>productName</key>
+			<string>takikenAppTests</string>
+			<key>productReference</key>
+			<string>09CE67E71CBD08DB00755544</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>09CE67E71CBD08DB00755544</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>takikenAppTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>09CE67E81CBD08DB00755544</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>09CE67CB1CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>09CE67D21CBD08DB00755544</string>
+			<key>remoteInfo</key>
+			<string>takikenApp</string>
+		</dict>
+		<key>09CE67E91CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>09CE67D21CBD08DB00755544</string>
+			<key>targetProxy</key>
+			<string>09CE67E81CBD08DB00755544</string>
+		</dict>
+		<key>09CE67EA1CBD08DB00755544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09CE67EB1CBD08DB00755544</string>
+				<string>09CE67ED1CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>takikenAppTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67EB1CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>takikenAppTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67EC1CBD08DB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE67EB1CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67ED1CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67EE1CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>09CE67F71CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67EF1CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67F01CBD08DB00755544</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09CE67F11CBD08DB00755544</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>09CE68011CBD08DB00755544</string>
+			<key>buildPhases</key>
+			<array>
+				<string>09CE67EE1CBD08DB00755544</string>
+				<string>09CE67EF1CBD08DB00755544</string>
+				<string>09CE67F01CBD08DB00755544</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>09CE67F41CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>takikenAppUITests</string>
+			<key>productName</key>
+			<string>takikenAppUITests</string>
+			<key>productReference</key>
+			<string>09CE67F21CBD08DB00755544</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>09CE67F21CBD08DB00755544</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>takikenAppUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>09CE67F31CBD08DB00755544</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>09CE67CB1CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>09CE67D21CBD08DB00755544</string>
+			<key>remoteInfo</key>
+			<string>takikenApp</string>
+		</dict>
+		<key>09CE67F41CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>09CE67D21CBD08DB00755544</string>
+			<key>targetProxy</key>
+			<string>09CE67F31CBD08DB00755544</string>
+		</dict>
+		<key>09CE67F51CBD08DB00755544</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09CE67F61CBD08DB00755544</string>
+				<string>09CE67F81CBD08DB00755544</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>takikenAppUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67F61CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>takikenAppUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67F71CBD08DB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE67F61CBD08DB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE67F81CBD08DB00755544</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE67F91CBD08DB00755544</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>09CE67FA1CBD08DB00755544</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>09CE67FB1CBD08DB00755544</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>09CE67FC1CBD08DB00755544</string>
+				<string>09CE67FD1CBD08DB00755544</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>09CE67FC1CBD08DB00755544</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>06554D3B36D6CC83FD451374</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>takikenApp/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>fksk.takikenApp</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>09CE67FD1CBD08DB00755544</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9F9841B157B9BAE7F9C5386B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>takikenApp/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>fksk.takikenApp</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>09CE67FE1CBD08DB00755544</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>09CE67FF1CBD08DB00755544</string>
+				<string>09CE68001CBD08DB00755544</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>09CE67FF1CBD08DB00755544</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>takikenAppTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>fksk.takikenAppTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/takikenApp.app/takikenApp</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>09CE68001CBD08DB00755544</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>takikenAppTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>fksk.takikenAppTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/takikenApp.app/takikenApp</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>09CE68011CBD08DB00755544</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>09CE68021CBD08DB00755544</string>
+				<string>09CE68031CBD08DB00755544</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>09CE68021CBD08DB00755544</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>takikenAppUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>fksk.takikenAppUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>takikenApp</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>09CE68031CBD08DB00755544</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>takikenAppUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>fksk.takikenAppUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>takikenApp</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>09CE68041CBDD07900755544</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>accessToApi.swift</string>
+			<key>path</key>
+			<string>../accessToApi.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE68051CBDD07900755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE68041CBDD07900755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE68121CBE496300755544</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>answerCategoriesViewController.swift</string>
+			<key>path</key>
+			<string>../answerCategoriesViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE68131CBE496300755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE68121CBE496300755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE68141CBE4CAB00755544</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PopUpPickerView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE68151CBE4CAB00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE68141CBE4CAB00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE68161CBE6C1300755544</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>problemModel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE68171CBE6C1300755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE68161CBE6C1300755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE68181CC07BB600755544</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>answerSelectionViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE68191CC07BB600755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE68181CC07BB600755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE681A1CC09BDF00755544</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>answerResultViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE681B1CC09BDF00755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE681A1CC09BDF00755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>09CE681C1CC0FD1900755544</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>answerTotalResultViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09CE681D1CC0FD1900755544</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09CE681C1CC0FD1900755544</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2393D9012853228B7EE7BB16</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_takikenApp.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>367D0BDEA18519D183C832DB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2393D9012853228B7EE7BB16</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>87E77F1048DAB08F18CF8D6B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>8FD0F6871166B1EBC5F4E736</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2393D9012853228B7EE7BB16</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9F3E957956555B8997E77186</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-takikenApp/Pods-takikenApp-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9F9841B157B9BAE7F9C5386B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-takikenApp.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-takikenApp/Pods-takikenApp.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC71E013EA5D4A665147F774</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-takikenApp/Pods-takikenApp-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B26726C70F2A51BECD5707C5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>06554D3B36D6CC83FD451374</string>
+				<string>9F9841B157B9BAE7F9C5386B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>09CE67CB1CBD08DB00755544</string>
+</dict>
+</plist>

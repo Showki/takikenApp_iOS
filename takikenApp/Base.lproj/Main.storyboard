@@ -16,6 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awM-dD-cvc">
+                                <rect key="frame" x="51" y="428" width="219" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="問題に挑戦" backgroundImage="challengeBtm">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chellengeProbrem:" destination="NBw-0d-bOi" eventType="touchUpInside" id="d9P-eh-HXb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="試験形式100問" image="randomHundred" id="M30-5p-igb"/>
@@ -28,7 +40,7 @@
         <!--お試し5問-->
         <scene sceneID="0VW-4E-gVi">
             <objects>
-                <viewController id="VDL-8j-QAI" sceneMemberID="viewController">
+                <viewController id="VDL-8j-QAI" customClass="answerRandomViewController" customModule="takikenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bqI-Yr-DxQ"/>
                         <viewControllerLayoutGuide type="bottom" id="o3i-mW-Rja"/>
@@ -36,10 +48,26 @@
                     <view key="view" contentMode="scaleToFill" id="LZ4-VP-NK2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihg-0i-eW2">
+                                <rect key="frame" x="51" y="415" width="219" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="問題に挑戦" backgroundImage="challengeBtm">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeProbem:" destination="VDL-8j-QAI" eventType="touchUpInside" id="E0T-wV-nme"/>
+                                    <action selector="chellengeProbrem:" destination="NBw-0d-bOi" eventType="touchUpInside" id="dHM-Ly-1k7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="お試し5問" image="randomFive" id="hU9-bc-rhb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="n3d-cv-EFP" kind="show" identifier="nextAnswer" id="QiO-w8-dfZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBv-I2-mff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,7 +76,7 @@
         <!--カテゴリ選択-->
         <scene sceneID="amk-Mw-Rtd">
             <objects>
-                <viewController id="NBw-0d-bOi" sceneMemberID="viewController">
+                <viewController id="NBw-0d-bOi" customClass="answerCategoriesViewController" customModule="takikenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gfy-m2-ccX"/>
                         <viewControllerLayoutGuide type="bottom" id="5nZ-cQ-UI9"/>
@@ -56,14 +84,271 @@
                     <view key="view" contentMode="scaleToFill" id="Eek-Vu-zLB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEl-Qk-LnG">
+                                <rect key="frame" x="51" y="383" width="219" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="カテゴリ選択" backgroundImage="categoryBtn">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectCategory:" destination="NBw-0d-bOi" eventType="touchUpInside" id="6yO-AO-Gy8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuQ-R0-tog">
+                                <rect key="frame" x="51" y="441" width="219" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="問題に挑戦" backgroundImage="challengeBtm">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chellengeProbrem:" destination="NBw-0d-bOi" eventType="touchUpInside" id="OlI-4G-Xdg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="カテゴリ選択" image="categoryFive" id="fjH-6I-i3m"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="selectCategory" destination="KEl-Qk-LnG" id="fZQ-iG-P9s"/>
+                        <segue destination="n3d-cv-EFP" kind="show" identifier="nextAnswer" id="Gsd-eF-91D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8l-lc-ORx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="936" y="346"/>
+        </scene>
+        <!--Answer Selection View Controller-->
+        <scene sceneID="Z6W-Qo-bpq">
+            <objects>
+                <viewController id="n3d-cv-EFP" customClass="answerSelectionViewController" customModule="takikenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vEd-dM-Fp0"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAz-JT-Jlp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JfE-th-jsP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wi-iM-bN7">
+                                <rect key="frame" x="39" y="265" width="242" height="41"/>
+                                <state key="normal" title="Button" backgroundImage="selectBtn"/>
+                                <connections>
+                                    <action selector="choice:" destination="n3d-cv-EFP" eventType="touchUpInside" id="bhH-PX-NB4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuf-LI-5kI">
+                                <rect key="frame" x="39" y="332" width="242" height="41"/>
+                                <state key="normal" title="Button" backgroundImage="selectBtn"/>
+                                <connections>
+                                    <action selector="choice:" destination="n3d-cv-EFP" eventType="touchUpInside" id="Jqd-8R-DMr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teT-PM-ZeR">
+                                <rect key="frame" x="39" y="399" width="242" height="41"/>
+                                <state key="normal" title="Button" backgroundImage="selectBtn"/>
+                                <connections>
+                                    <action selector="choice:" destination="n3d-cv-EFP" eventType="touchUpInside" id="1Id-e9-3ZJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gL-WU-wWr">
+                                <rect key="frame" x="39" y="465" width="242" height="41"/>
+                                <state key="normal" title="Button" backgroundImage="selectBtn"/>
+                                <connections>
+                                    <action selector="choice:" destination="n3d-cv-EFP" eventType="touchUpInside" id="n5g-lD-0l0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sentenceBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gIi-5g-zcb">
+                                <rect key="frame" x="0.0" y="28" width="320" height="215"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2X-rC-V5a">
+                                <rect key="frame" x="23" y="57" width="274" height="127"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoA-Bs-ECT">
+                                <rect key="frame" x="124" y="28" width="81" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="problemNumberLabel" destination="ZoA-Bs-ECT" id="Rov-YV-YWi"/>
+                        <outlet property="selectAnswer1" destination="1wi-iM-bN7" id="TT8-80-ejT"/>
+                        <outlet property="selectAnswer2" destination="Cuf-LI-5kI" id="qc0-lp-RGO"/>
+                        <outlet property="selectAnswer3" destination="teT-PM-ZeR" id="zKK-0m-MmU"/>
+                        <outlet property="selectAnswer4" destination="4gL-WU-wWr" id="aBp-B1-jvc"/>
+                        <outlet property="sentenceLabel" destination="x2X-rC-V5a" id="mRk-2y-Yod"/>
+                        <segue destination="XwB-0L-WIh" kind="show" identifier="result" id="K0s-CR-ODR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgA-dl-Xpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319" y="346"/>
+        </scene>
+        <!--Answer Result View Controller-->
+        <scene sceneID="3P1-WL-OLa">
+            <objects>
+                <viewController id="XwB-0L-WIh" customClass="answerResultViewController" customModule="takikenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Td7-Tb-yJ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="y4s-Ob-EHT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QWK-TA-AMm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="解答" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl9-z0-yI6">
+                                <rect key="frame" x="119" y="9" width="95" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正解" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-kE-hRl">
+                                <rect key="frame" x="95" y="109" width="119" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="答え：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcH-hZ-6ag">
+                                <rect key="frame" x="14" y="239" width="99" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgV-ce-bxZ">
+                                <rect key="frame" x="69" y="238" width="245" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="解説文" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-yA-xwQ">
+                                <rect key="frame" x="8" y="286" width="299" height="136"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7l-kd-ukC">
+                                <rect key="frame" x="29" y="448" width="250" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="次の問題へ" backgroundImage="sentenceBackground">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextAction:" destination="XwB-0L-WIh" eventType="touchUpInside" id="vWz-TL-lZB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="dvI-yA-xwQ" id="BpR-nK-ajg"/>
+                        <outlet property="resultLabel" destination="dfQ-kE-hRl" id="8gb-If-xh9"/>
+                        <outlet property="rightAnswerLabel" destination="rgV-ce-bxZ" id="eRx-5I-29T"/>
+                        <segue destination="n3d-cv-EFP" kind="show" identifier="nextAnswer" id="IxQ-RP-fGU"/>
+                        <segue destination="hCn-vG-7qk" kind="show" identifier="totalResult" id="Dd5-I0-Iae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1e-pS-w4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="346"/>
+        </scene>
+        <!--Answer Total Result View Controller-->
+        <scene sceneID="Dlb-cf-U6q">
+            <objects>
+                <viewController id="hCn-vG-7qk" customClass="answerTotalResultViewController" customModule="takikenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bcz-zt-Dx7"/>
+                        <viewControllerLayoutGuide type="bottom" id="dvt-WW-H2H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="feT-c9-72v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdP-JM-3A5">
+                                <rect key="frame" x="145" y="132" width="45" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正解" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPw-AL-82d">
+                                <rect key="frame" x="62" y="137" width="100" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-As-rLw">
+                                <rect key="frame" x="178" y="132" width="55" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4H-xr-IQw">
+                                <rect key="frame" x="34" y="397" width="270" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="もう１問！" backgroundImage="sentenceBackground">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modeAnswer:" destination="hCn-vG-7qk" eventType="touchUpInside" id="DZ5-FM-J8Q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果発表" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ga-lQ-ZHt">
+                                <rect key="frame" x="103" y="58" width="132" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お疲れ様でした！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XB4-uj-mj5">
+                                <rect key="frame" x="13" y="236" width="184" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題を作る学習もやってみましょう！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfk-tW-7Zg">
+                                <rect key="frame" x="13" y="271" width="210" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOj-kd-b78">
+                                <rect key="frame" x="13" y="132" width="55" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oJ-aO-e1o">
+                                <rect key="frame" x="34" y="476" width="270" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="カテゴリー選択画面へ" backgroundImage="sentenceBackground">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="hCn-vG-7qk" eventType="touchUpInside" id="ZRI-CA-fbE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="correctCountLabel" destination="sOj-kd-b78" id="5tG-qi-WNR"/>
+                        <outlet property="problemsCountLabel" destination="Etb-As-rLw" id="RWr-Mc-VBn"/>
+                        <segue destination="n3d-cv-EFP" kind="show" identifier="nextAnswer" id="Dme-fk-ivg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5f8-OH-qe7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2132" y="346"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="J0r-T5-gTV">
@@ -87,8 +372,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="categoryBtn" width="180" height="30"/>
         <image name="categoryFive" width="32" height="32"/>
+        <image name="challengeBtm" width="180" height="30"/>
         <image name="randomFive" width="32" height="32"/>
         <image name="randomHundred" width="32" height="32"/>
+        <image name="selectBtn" width="180" height="30"/>
+        <image name="sentenceBackground" width="180" height="42"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gsd-eF-91D"/>
+    </inferredMetricsTieBreakers>
 </document>
